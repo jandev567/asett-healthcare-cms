@@ -1,6 +1,7 @@
 {
   "name": "cms-healthcare",
-  "version": "0.1.0",
+  "version": "1.1.0",
+  "homepage": "/asett-healthcare-cms/",
   "private": true,
   "dependencies": {
     "@cmsgov/design-system": "12.0.0",

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, TextField, Choice, Alert, Dropdown } from '@cmsgov/design-system';
+import { Button, TextField, Choice, Dropdown } from '@cmsgov/design-system';
 import { useNavigate } from 'react-router-dom';
 
 const ComplainantDetails = () => {
@@ -41,14 +41,14 @@ const ComplainantDetails = () => {
   };
 
   // Progress bar steps
-  const steps = [
-    { name: 'Complaint Type', status: 'completed' },
-    { name: 'Complainant Details', status: 'current' },
-    { name: 'FAE Details', status: 'upcoming' },
-    { name: 'Complaint Details', status: 'upcoming' },
-    { name: 'Review Complaint', status: 'upcoming' },
-    { name: 'Submitted', status: 'upcoming' }
-  ];
+  // const steps = [
+  //   { name: 'Complaint Type', status: 'completed' },
+  //   { name: 'Complainant Details', status: 'current' },
+  //   { name: 'FAE Details', status: 'upcoming' },
+  //   { name: 'Complaint Details', status: 'upcoming' },
+  //   { name: 'Review Complaint', status: 'upcoming' },
+  //   { name: 'Submitted', status: 'upcoming' }
+  // ];
 
   return (
     <div className="ds-l-container">

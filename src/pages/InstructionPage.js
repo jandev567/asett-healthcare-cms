@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Alert } from '@cmsgov/design-system';
+import { Button } from '@cmsgov/design-system';
 import { useNavigate } from 'react-router-dom';
 import '../styles/instructionPage.css';
 
