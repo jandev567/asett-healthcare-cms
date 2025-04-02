@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/asett-healthcare-cms/static/css/main.3987cf8b.css",
-    "main.js": "/asett-healthcare-cms/static/js/main.8bb77de3.js",
+    "main.js": "/asett-healthcare-cms/static/js/main.1f1225e3.js",
     "static/media/bitter-regular.woff2": "/asett-healthcare-cms/static/media/bitter-regular.f4e2f1f1135ef93f5f33.woff2",
     "static/media/bitter-italic.woff2": "/asett-healthcare-cms/static/media/bitter-italic.346445748afc745b52d8.woff2",
     "static/media/opensans-italic-webfont.woff2": "/asett-healthcare-cms/static/media/opensans-italic-webfont.72daa33a3ccda57263a3.woff2",
@@ -11,10 +11,10 @@
     "static/media/opensans-regular-webfont.woff2": "/asett-healthcare-cms/static/media/opensans-regular-webfont.ca4dd8357b26187274d0.woff2",
     "index.html": "/asett-healthcare-cms/index.html",
     "main.3987cf8b.css.map": "/asett-healthcare-cms/static/css/main.3987cf8b.css.map",
-    "main.8bb77de3.js.map": "/asett-healthcare-cms/static/js/main.8bb77de3.js.map"
+    "main.1f1225e3.js.map": "/asett-healthcare-cms/static/js/main.1f1225e3.js.map"
   },
   "entrypoints": [
     "static/css/main.3987cf8b.css",
-    "static/js/main.8bb77de3.js"
+    "static/js/main.1f1225e3.js"
   ]
 }
