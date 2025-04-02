@@ -1,0 +1,66 @@
+.progress-bar {
+  display: flex;
+  height: 20px;
+  justify-content: space-between;
+margin-top: 10px;
+  background-color:#7e7676;
+  border-radius: 10px;
+  border-bottom: 2px solid #887f7f;
+}
+.content-disclaimer{
+  text-align: end;
+  position: relative;
+  top:-18px;
+  left:35px
+}
+.step {
+  flex: 1;
+  text-align: center;
+  padding: px 1px;
+  font-weight: bold;
+  color:#fff;
+  font-size: 12px !important;
+  border-radius: 5px;
+}
+
+.step.active {
+  color: #fff;
+  background-color: #FDB81E;
+  font-size: 12px !important;
+  border-radius: 10px;
+}
+.title{
+  font-weight: bolder;
+  font-size: 25px;
+}
+
+.form-field{
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  text-align: center;
+  border-bottom: 1px solid #cac5c5  ;
+}
+
+.ds-c-label{
+  font-size: 20px;
+}
+
+.ds-c-hint{
+  font-size: 12px;
+}
+.ds-c-choice{
+  height: 16px;
+  width: 15px;
+}
+.ds-c-choice{
+  height: 16px;
+  width: 15px;
+}
+.bold-text{
+  font-weight: bold;
+}
+.margin-right-txt{
+  margin-right: 230px;
+  font-size: 14px;
+}
