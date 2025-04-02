@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import '@cmsgov/design-system/dist/css/index.css';
 import './styles/App.css';
 // import { Header, USABanner } from '@cmsgov/design-system';
