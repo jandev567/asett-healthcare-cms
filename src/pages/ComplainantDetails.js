@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Button, TextField, Choice, Dropdown } from '@cmsgov/design-system';
+import { Button, TextField, Choice } from '@cmsgov/design-system';
 import { useNavigate } from 'react-router-dom';
 
 const ComplainantDetails = () => {
