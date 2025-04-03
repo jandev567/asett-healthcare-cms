@@ -9,9 +9,9 @@ const Header = () => {
         <div className="container">
           <div className="logo-container">
             <Link to="/" className="logo-link">
-              <img src="/cms-logo.png" alt="CMS Logo" height="100" />
+              <img src={`${process.env.PUBLIC_URL}/cms-logo.png`} alt="CMS Logo" height="100" />
             </Link>
-            <img src="/road-sign.png" alt="Road Sign" height="100" className="road-sign" />
+            <img src={`${process.env.PUBLIC_URL}/road-sign.png`} alt="Road Sign" height="100" className="road-sign" />
           </div>
         </div>
       </div>

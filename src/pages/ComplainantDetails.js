@@ -105,9 +105,9 @@ const ComplainantDetails = () => {
         </div>
 
 
-        <form onSubmit={handleSubmit} className="ds-c-form ds-u-margin-top--3" >
-          <div className="form-field">
-            <label htmlFor="organizationName" className="form-label">
+        <form onSubmit={handleSubmit} className="ds-c-form ds-u-margin-top--3 " >
+          <div className="form-field bold-text">
+            <label htmlFor="organizationName" className="form-label ml-10">
               Complainant Organization Name<span className="required">*</span>
             </label>
             <input
@@ -121,25 +121,25 @@ const ComplainantDetails = () => {
             />
           </div>
 
-          <div className="form-field ds-u-fill--gray-lightest">
-            <label htmlFor="organizationType" className="form-label">
+          <div className="form-field ds-u-fill--gray-lightest bold-text">
+            <label htmlFor="organizationType" className="form-label ml-10">
               Complainant Organization Type
             </label>
-            <Dropdown
-              label=""
+            <input
+              type="text"
+              id="organizationType"
               name="organizationType"
               value={formData.organizationType}
               onChange={handleChange}
-              options={[
-                { label: '--None--', value: '' },
-                { label: 'Option 1', value: 'option1' },
-                { label: 'Option 2', value: 'option2' }
-              ]}
+              required
+              placeholder='--None--'
+              className="form-input"
             />
+
           </div>
 
-          <div className="form-field">
-            <label htmlFor="organizationTypeOther" className="form-label">
+          <div className="form-field bold-text">
+            <label htmlFor="organizationTypeOther" className="form-label ml-10">
               Complainant Organization Type (Other)
             </label>
             <TextField
@@ -150,8 +150,8 @@ const ComplainantDetails = () => {
             />
           </div>
 
-          <div className="form-field ds-u-fill--gray-lightest">
-            <label htmlFor="organizationRole" className="form-label">
+          <div className="form-field ds-u-fill--gray-lightest bold-text">
+            <label htmlFor="organizationRole" className="form-label ml-10">
               Complainant Organization Role
             </label>
             <TextField
@@ -162,8 +162,8 @@ const ComplainantDetails = () => {
             />
           </div>
 
-          <div className="form-field">
-            <label htmlFor="organizationPhone" className="form-label">
+          <div className="form-field bold-text">
+            <label htmlFor="organizationPhone" className="form-label ml-10">
               Complainant Organization Phone Number<span className="required">*</span>
             </label>
             <TextField
@@ -171,33 +171,31 @@ const ComplainantDetails = () => {
               name="organizationPhone"
               value={formData.organizationPhone}
               onChange={handleChange}
-              mask="(***) ***-****"
+              placeholder="(***) ***-****"
               required
             />
           </div>
 
-          <div className="form-field ds-u-fill--gray-lightest">
-            <label htmlFor="title" className="form-label">
+          <div className="form-field ds-u-fill--gray-lightest bold-text">
+            <label htmlFor="title" className="form-label ml-10">
               Complainant Title<span className="required">*</span>
             </label>
-            <Dropdown
-              label=""
+
+            <input
+              type="text"
+              id="title"
               name="title"
               value={formData.title}
               onChange={handleChange}
-              options={[
-                { label: '--None--', value: '' },
-                { label: 'Mr.', value: 'mr' },
-                { label: 'Mrs.', value: 'mrs' },
-                { label: 'Ms.', value: 'ms' },
-                { label: 'Dr.', value: 'dr' }
-              ]}
               required
+              className="form-input"
+              placeholder='--None--'
             />
+
           </div>
 
-          <div className="form-field">
-            <label htmlFor="firstName" className="form-label">
+          <div className="form-field bold-text">
+            <label htmlFor="firstName" className="form-label ml-10">
               Complainant First Name<span className="required">*</span>
             </label>
             <TextField
@@ -209,8 +207,8 @@ const ComplainantDetails = () => {
             />
           </div>
 
-          <div className="form-field ds-u-fill--gray-lightest">
-            <label htmlFor="middleInitial" className="form-label">
+          <div className="form-field ds-u-fill--gray-lightest bold-text">
+            <label htmlFor="middleInitial" className="form-label ml-10">
               Complainant MI
             </label>
             <TextField
@@ -221,8 +219,8 @@ const ComplainantDetails = () => {
             />
           </div>
 
-          <div className="form-field">
-            <label htmlFor="lastName" className="form-label">
+          <div className="form-field bold-text">
+            <label htmlFor="lastName" className="form-label ml-10">
               Complainant Last Name<span className="required">*</span>
             </label>
             <TextField
@@ -234,8 +232,8 @@ const ComplainantDetails = () => {
             />
           </div>
 
-          <div className="form-field" ds-u-fill--gray-lightest>
-            <label htmlFor="addressLine1" className="form-label">
+          <div className="form-field bold-text ds-u-fill--gray-lightest">
+            <label htmlFor="addressLine1" className="form-label ml-10">
               Complainant Address Line 1<span className="required">*</span>
             </label>
             <TextField
@@ -247,8 +245,8 @@ const ComplainantDetails = () => {
             />
           </div>
 
-          <div className="form-field">
-            <label htmlFor="addressLine2" className="form-label">
+          <div className="form-field bold-text">
+            <label htmlFor="addressLine2" className="form-label ml-10">
               Complainant Address Line 2
             </label>
             <TextField
@@ -259,8 +257,8 @@ const ComplainantDetails = () => {
             />
           </div>
 
-          <div className="form-field ds-u-fill--gray-lightest">
-            <label htmlFor="city" className="form-label">
+          <div className="form-field ds-u-fill--gray-lightest bold-text">
+            <label htmlFor="city" className="form-label ml-10">
               Complainant City/Town<span className="required">*</span>
             </label>
             <TextField
@@ -272,48 +270,55 @@ const ComplainantDetails = () => {
             />
           </div>
 
-          <div className="form-field">
-            <label htmlFor="state" className="form-label">
+          <div className="form-field bold-text">
+            <label htmlFor="state" className="form-label ml-10">
               Complainant State/Territory<span className="required">*</span>
             </label>
-            <Dropdown
-              label=""
+            <input
+              type="text"
+              id="state"
               name="state"
               value={formData.state}
               onChange={handleChange}
-              options={[ /* Add state options */]}
               required
+              placeholder='--None--'
+              className="form-input"
             />
+
           </div>
 
-          <div className="form-field ds-u-fill--gray-lightest">
-            <label htmlFor="zipCode" className="form-label">
+          <div className="form-field ds-u-fill--gray-lightest bold-text">
+            <label htmlFor="zipCode" className="form-label ml-10">
               Complainant Zip Code<span className="required">*</span>
             </label>
-            <TextField
-              label=""
-              name="zipCode"
-              value={formData.zipCode}
-              onChange={handleChange}
-              mask="*****"
-              required
-            />
+            <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+              <TextField
+                label=""
+                name="zipCode"
+                value={formData.zipCode}
+                onChange={handleChange}
+                placeholder="55555"
+                required
+                style={{ width: '130px' }}
+              />
+              <div style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
+             
+                <TextField
+                  label=""
+                  name="zipExt"
+                  value={formData.zipExt}
+                  onChange={handleChange}
+                  placeholder='Ext'
+                  style={{ width: '80px' }}
+                />
+              </div>
+            </div>
           </div>
 
-          <div className="form-field">
-            <label htmlFor="zipExt" className="form-label">
-              Ext
-            </label>
-            <TextField
-              label=""
-              name="zipExt"
-              value={formData.zipExt}
-              onChange={handleChange}
-            />
-          </div>
 
-          <div className="form-field ds-u-fill--gray-lightest">
-            <label htmlFor="email" className="form-label">
+
+          <div className="form-field  bold-text">
+            <label htmlFor="email" className="form-label ml-10">
               Complainant Email Address<span className="required">*</span>
             </label>
             <TextField
@@ -321,39 +326,42 @@ const ComplainantDetails = () => {
               name="email"
               type="email"
               value={formData.email}
+              placeholder="example@demo.com"
               onChange={handleChange}
               required
             />
           </div>
 
-          <div className="form-field">
-            <label htmlFor="contactPhone" className="form-label">
+          <div className="form-field bold-text ds-u-fill--gray-lightest">
+            <label htmlFor="contactPhone" className="form-label ml-10">
               Complainant Contact Phone Number<span className="required">*</span>
             </label>
-            <TextField
-              label=""
-              name="contactPhone"
-              value={formData.contactPhone}
-              onChange={handleChange}
-              mask="(***) ***-****"
-              required
-            />
+            <div style={{ display: 'flex', gap: '20px', alignItems: 'center' }}>
+              <TextField
+                label=""
+                name="contactPhone"
+                value={formData.contactPhone}
+                onChange={handleChange}
+                placeholder="(***) ***-****"
+                required
+                style={{ width: '130px' }}
+
+              />
+              <TextField
+                label=""
+                name="contactPhoneExt"
+                value={formData.contactPhoneExt}
+                onChange={handleChange}
+                placeholder="Ext"
+                style={{ width: '80px' }}
+              />
+            </div>
           </div>
 
-          <div className="form-field ds-u-fill--gray-lightest">
-            <label htmlFor="contactPhoneExt" className="form-label">
-              Ext
-            </label>
-            <TextField
-              label=""
-              name="contactPhoneExt"
-              value={formData.contactPhoneExt}
-              onChange={handleChange}
-            />
-          </div>
 
-          <div className="form-field">
-            <label htmlFor="cellPhone" className="form-label">
+
+          <div className="form-field bold-text">
+            <label htmlFor="cellPhone" className="form-label ml-10">
               Complainant Cell Phone Number
             </label>
             <TextField
@@ -361,7 +369,7 @@ const ComplainantDetails = () => {
               name="cellPhone"
               value={formData.cellPhone}
               onChange={handleChange}
-              mask="(***) ***-****"
+              placeholder="(***) ***-****"
             />
           </div>
 
@@ -386,7 +394,7 @@ const ComplainantDetails = () => {
               className="nav-button"
               type="submit"
             >
-              Filed Against Entity Information>{'>'}
+              Filed Against Entity Information {'>'}
             </Button>
           </div>
         </form>
